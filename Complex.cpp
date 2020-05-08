@@ -4,7 +4,7 @@
 #include <sstream>
 #include <stdexcept>
 
-Complex::Complex(std::string& input) //string constructor
+Complex::Complex(std::string& input) //string constructor NEEDS REVISION
 {
 	std::istringstream ss1(input);
 	std::string numHolder;
