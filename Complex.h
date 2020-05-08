@@ -6,7 +6,7 @@
 #include <sstream>
 #include <stdexcept>
 
-class Complex //MY CODE ONLY WORKS UP UNTIL THE STRING CONSTRUCTOR IS TESTED WHICH IS AT THE SOURCE MAIN CPP LINE 89
+class Complex
 {
 
 private: 
