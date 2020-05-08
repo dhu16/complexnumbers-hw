@@ -84,31 +84,5 @@ int main() {
 	const Complex z8 = z7;
 	std::cout << "z8 imag: " << z8["imag"] << '\n';
 
-	// testing the tostrings...
-
-	std::cout << Complex{ "3+4i" } << '\n' << Complex{ "i" } << '\n' <<
-		Complex{ "i+2i-3.2+4.2i+6-1" } << '\n' << Complex{ "-i" } << '\n';
-
-	std::string empty;
-	std::string also_bad("3.2-seven");
-
-	try { // outer try
-		try { // inner try, makes a Complex from empty string
-			Complex will_fail(empty);
-			std::cout << will_fail << '\n';
-		}
-		catch (const std::logic_error & L) { // manage that exception
-			std::cout << L.what() << '\n';
-			Complex not_gonna_work = also_bad; // but give another bad string
-			std::cout << not_gonna_work << '\n';
-		}
-	}
-	catch (const std::logic_error & L) { // catch any throws here
-		std::cerr << L.what() << '\n';
-	}
-
-	std::cin.get();
-	std::cin.get();
-
 	return 0;
 }
